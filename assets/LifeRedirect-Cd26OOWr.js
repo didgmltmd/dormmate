@@ -1,0 +1,1 @@
+import{af as r,j as o,aq as p}from"./index-CO7P00t6.js";function i(){const{pathname:e,search:a}=r(),t=e.replace(/^\/app\/life\/?/,""),s=t.startsWith("requests")?"/app/community/requests":`/app/community/${t}`;return o.jsx(p,{to:s+a,replace:!0})}export{i as default};
