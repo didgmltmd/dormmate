@@ -1,1 +1,0 @@
-import{a,b as d}from"./index-7Dx-RUav.js";const o={all:["dashboard"],desk:r=>["dashboard","desk",r],field:["dashboard","field"]},e={desk:r=>a(d.GET("/dashboard",{params:{query:{building_id:r||null}}})),field:()=>a(d.GET("/dashboard/field"))};function l(r){return"error"in r&&typeof r.error=="string"?r.error:null}export{o as a,e as d,l as s};
