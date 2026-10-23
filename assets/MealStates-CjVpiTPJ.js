@@ -1,0 +1,26 @@
+import{c as n,a as p,b as y,j as s,h as o}from"./index-7Dx-RUav.js";import{k}from"./format-CUQZZdyD.js";import{H as u}from"./hourglass-BxGK5Z46.js";import{C as f}from"./cloud-off-MUs-W9EW.js";/**
+ * @license lucide-react v1.61.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const r={name:"calendar-x-2",size:24,node:[["path",{d:"M16 2v3",key:"otl347"}],["path",{d:"m17 16 5 5",key:"1a37d9"}],["path",{d:"m17 21 5-5",key:"1b797a"}],["path",{d:"M21 12V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h8",key:"14ws7l"}],["path",{d:"M3 9h18",key:"1pudct"}],["path",{d:"M8 2v3",key:"1ioesn"}]]};r.node;const c=n(r);/**
+ * @license lucide-react v1.61.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const d={name:"sun",size:24,node:[["circle",{cx:"12",cy:"12",r:"4",key:"4exip2"}],["path",{d:"M12 2v2",key:"tus03m"}],["path",{d:"M12 20v2",key:"1lh1kg"}],["path",{d:"m4.93 4.93 1.41 1.41",key:"149t6j"}],["path",{d:"m17.66 17.66 1.41 1.41",key:"ptbguv"}],["path",{d:"M2 12h2",key:"1t8f8n"}],["path",{d:"M20 12h2",key:"1q8mjw"}],["path",{d:"m6.34 17.66-1.41 1.41",key:"1m8zz5"}],["path",{d:"m19.07 4.93-1.41 1.41",key:"1shlcs"}]]};d.node;const T=n(d);/**
+ * @license lucide-react v1.61.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const l={name:"sunrise",size:24,node:[["path",{d:"M12 2v8",key:"1q4o3n"}],["path",{d:"m4.93 10.93 1.41 1.41",key:"2a7f42"}],["path",{d:"M2 18h2",key:"j10viu"}],["path",{d:"M20 18h2",key:"wocana"}],["path",{d:"m19.07 10.93-1.41 1.41",key:"15zs5n"}],["path",{d:"M22 22H2",key:"19qnx5"}],["path",{d:"m8 6 4-4 4 4",key:"ybng9g"}],["path",{d:"M16 18a4 4 0 0 0-8 0",key:"1lzouq"}]]};l.node;const z=n(l);/**
+ * @license lucide-react v1.61.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const m={name:"utensils-crossed",size:24,node:[["path",{d:"m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8",key:"n7qcjb"}],["path",{d:"M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Zm0 0 7 7",key:"d0u48b"}],["path",{d:"m2.1 21.8 6.4-6.3",key:"yn04lh"}],["path",{d:"m19 5-7 7",key:"194lzd"}]],aliases:["fork-knife-crossed"]};m.node;const x=n(m);/**
+ * @license lucide-react v1.61.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const h={name:"utensils",size:24,node:[["path",{d:"M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2",key:"cjf0a3"}],["path",{d:"M7 2v20",key:"1473qp"}],["path",{d:"M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7",key:"j28e5"}]],aliases:["fork-knife"]};h.node;const S=n(h),O={all:["meals"],week:e=>["meals",e]},U={week:e=>p(y.GET("/campus/meals",{params:{query:{week:e}}}))};function w(e=k()){const t=new Date(`${e}T00:00:00Z`),a=(t.getUTCDay()+6)%7;return t.setUTCDate(t.getUTCDate()-a),t.toISOString().slice(0,10)}function C(e,t){const a=new Date(`${e}T00:00:00Z`);return a.setUTCDate(a.getUTCDate()+t),a.toISOString().slice(0,10)}const g=["일","월","화","수","목","금","토"];function A(e){const t=new Date(`${e}T00:00:00Z`);return{day:String(t.getUTCDate()),weekday:g[t.getUTCDay()]??"",md:`${t.getUTCMonth()+1}/${t.getUTCDate()}`}}function _(e,t){return/아침|조식/.test(e)?"morning":/점심|중식/.test(e)?"noon":/저녁|석식/.test(e)?"evening":["morning","noon","evening"][t]??"other"}const E=e=>e&&(e.status==="LOADING"||e.refreshing)?5e3:!1;function L(e=new Date){const t=Number(new Intl.DateTimeFormat("en-US",{timeZone:"Asia/Seoul",hour:"numeric",hour12:!1}).format(e))%24;return t<9?"morning":t<14?"noon":"evening"}const D={NOT_POSTED:{title:"아직 식단이 올라오지 않았어요",body:"학교에 식단이 올라오면 여기에 바로 보여 드릴게요.",icon:s.jsx(x,{className:"size-5"})},UNAVAILABLE:{title:"지난 주 식단은 볼 수 없어요",body:"이번 주나 다음 주 식단을 확인해 주세요.",icon:s.jsx(c,{className:"size-5"})},ERROR:{title:"식단을 불러오지 못했어요",body:"학교 기록을 가져오는 중 문제가 생겼어요. 잠시 후 다시 확인해 주세요.",icon:s.jsx(f,{className:"size-5"})},LOADING:{title:"식단을 불러오는 중이에요",body:"학교 기록을 확인하고 있어요. 잠시만 기다려 주세요.",icon:s.jsx(u,{className:"size-5 animate-pulse"})},OFF:{title:"지금은 식단을 볼 수 없어요",body:"식단 보기가 잠시 꺼져 있어요.",icon:s.jsx(c,{className:"size-5"})}},b={NOT_POSTED:"bg-bee-soft text-bee-ink",UNAVAILABLE:"bg-surface-2 text-ink-2",ERROR:"bg-spark-soft text-spark-ink",LOADING:"bg-sky-soft text-sky-ink",OFF:"bg-surface-2 text-ink-2"};function R({status:e,compact:t,action:a}){const i=D[e];return s.jsxs("div",{className:o("flex items-start gap-3",t?"py-1":"flex-col items-center px-6 py-10 text-center"),role:e==="ERROR"?"alert":void 0,children:[s.jsx("span",{className:o("flex shrink-0 items-center justify-center rounded-full",t?"size-9":"mb-1 size-11",b[e]),children:i.icon}),s.jsxs("div",{className:"min-w-0",children:[s.jsx("p",{className:o("font-semibold text-ink-2",t?"text-[14px]":"text-[15px]"),children:i.title}),s.jsx("p",{className:o("text-ink-3",t?"text-[12.5px]":"mt-1 max-w-xs text-[13.5px]"),children:i.body}),a&&s.jsx("div",{className:t?"mt-2":"mt-4",children:a})]})]})}export{R as M,T as S,S as U,_ as a,z as b,L as c,E as d,U as e,O as f,C as g,A as h,w as m};

@@ -1,1 +1,0 @@
-import{e as u,a as r,b as a}from"./index-B0RfWZxg.js";function t(e=!1){return u({queryKey:["structure",e],queryFn:()=>r(a.GET("/buildings",{params:{query:{rooms:e}}})),staleTime:10*6e4})}export{t as u};

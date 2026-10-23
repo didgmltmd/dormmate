@@ -1,0 +1,1 @@
+import{j as t,F as r,m as s}from"./index-7Dx-RUav.js";function i({title:e}){return t.jsxs(t.Fragment,{children:[t.jsx(r,{title:e}),t.jsx(s,{mascot:!0,title:"곧 만나요",description:"이 화면은 준비 중이에요."})]})}export{i as default};
